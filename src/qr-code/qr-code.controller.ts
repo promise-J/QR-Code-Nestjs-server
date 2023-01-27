@@ -13,7 +13,6 @@ export class QrCodeController {
     try {
         const qrCode = await this.qrCodeService.generateQrCode(text);
         res.setHeader('Content-Type', 'image/png');
-        console.log(await Q.toDataURL('promise'),'the qrcodeeee')
         // res.status(HttpStatus.OK).json(qrCode);
         res.status(HttpStatus.OK).json(await Q.toDataURL(text));
     } catch (error) {

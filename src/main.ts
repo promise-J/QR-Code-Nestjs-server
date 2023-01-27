@@ -9,7 +9,7 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
   app.enableCors({
-    origin: ["http://localhost:3001"],
+    origin: ["http://localhost:3001", "https://jp-qrcode.netlify.app/"],
     methods: ["GET", "POST", "PUT", "DELETE"]
   })
   await app.listen(3000);

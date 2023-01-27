@@ -2,7 +2,7 @@ import {Controller, Get, Put} from '@nestjs/common'
 import { AppService } from './app.service';
 
 
-// const API_KEY = 'AIzaSyD8Hrc2-57QdXvRhq1ZLnRmcPhF90iFhXQ'
+// const API_KEY = 'YOUR_API_KEY_HERE'
 //const searchUrl = 'https://www.googleapis.com/youtube/v3/search';
 // const params = {
 //   part: 'snippet',
